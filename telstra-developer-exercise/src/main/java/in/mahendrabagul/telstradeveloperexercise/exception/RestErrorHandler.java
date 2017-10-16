@@ -15,7 +15,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class RestErrorHandler extends ResponseEntityExceptionHandler {
 	/**
-	 * I tried to handle "user not found in the system" exception
+	 * I tried to handle "user not found in the system" exception I could not handle
+	 * the exception when particular discount will not be applied to a product.
 	 */
 	@ExceptionHandler(Exception.class)
 	protected ResponseEntity<Object> handleConflict(RuntimeException ex, WebRequest request) {
